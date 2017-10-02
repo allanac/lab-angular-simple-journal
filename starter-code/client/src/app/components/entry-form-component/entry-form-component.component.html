@@ -1,0 +1,14 @@
+<h3> Add Journal Entry </h3>
+
+<form (ngSubmit)="saveNewEntry()">
+  <label for="journal-title-input"> Journal Title</label>
+  <input id="journal-title-input" type="text" placeholder="Angular Trials"
+          name="title" [(ngModel)]="newEntry.title">
+  <br>
+  <label for="journal-text-input"> Journal Title</label>
+  <textarea id="journal-text-input" type="text" placeholder="today..."
+          name="content" [(ngModel)]="newEntry.content">
+  </textarea>
+  <br>
+  <button> Save This Entry </button>
+</form>

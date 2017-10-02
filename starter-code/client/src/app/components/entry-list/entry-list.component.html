@@ -1,0 +1,13 @@
+<h2> Journal Entries </h2>
+
+<app-entry-form-component></app-entry-form-component>
+<br>
+<ul>
+  <li *ngFor="let oneJournal of entries">
+  <h3>  {{ oneJournal.title }} </h3>
+    <p> {{ oneJournal.content }} </p>
+    <p>{{ oneJournal.date }} </p>
+  <br>
+  <a [routerLink]="['/journal-entries', oneJournal._id]"> See Details </a>
+  </li>
+</ul>
